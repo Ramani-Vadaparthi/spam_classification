@@ -24,6 +24,7 @@ def api():
     dic['Transmission'] = request.headers['Transmission']
     dic['Owner'] = request.headers['Owner']
     prediction = predict_price(dic)
+    print('This is in develop branch')
     return prediction
 
 if __name__=='__main__':
